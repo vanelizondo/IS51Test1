@@ -46,23 +46,22 @@ Push all the files onto your GITHub repo and change name of the top folder to
 
 Make sure the computer, VS Code, and the files / application is all working properly with no errors or warnings.
 
-### Code Component - Best Part Sales Project
+### Code Component - Smart Phone Sales Project
 
-You are hired to create a Web application to computerize Best Part sales process. The application should have a structure that stores the following part data: PID (a string), Description (a string), Price (a number) and Inventory (an number). The company currently carries only three parts as shown in the table below and the application should use an array of three custom objects (interface). If you don’t know how to use an array of three object variables, you can use  array of objects instead with 5 points penalty.
+You are hired to create a Web application to automate the sales process. The application should have a structure that stores the following part data: PID (a string), Description (a string), Price (a number) and Qauntity (an number). The company currently carries only three parts as shown in the table below and the application should use an array of three custom objects (interface). If you don’t know how to use an array of three object variables, you can use  array of objects instead with 5 points penalty.
 
 #### PID Description Price Inventory
-2. 1 Hot Dog 5.00 2
-3. 2 Hamberger 6.00 1
-4. 3 Pizza 12.00 2
+2. 1 Android 150.00 2
+3. 2 IPhone 200.00 1
+4. 3 Windows Phone 110.00 2
 
 The data above is located in ```assets/orders.json``` for reference. 
 
-Your application should allow the user to enter data for each item (quantity). When “Load Saved Items” button is clicked, use Angular’s HTTP module to fetch the json data from the orders.json file and display the content on the table. PID, Description, Price and quantity should be displayed inside text input. The user will enter any quantity to order for each item. When “Submit” button is clicked, calculate the total order amount plus tax (10 % or .10) and display the result to the user in a flex-modal or alert message.
+Your application should allow the user to enter data for each item (quantity). When “Load Saved Items” button is clicked, populate the default sales data from the orders.json file and display the content on the table. PID, Description, Price and quantity should be displayed inside text input. The user will enter any quantity to order for each item. When “Submit” button is clicked, calculate the total order amount plus tax (15 % or .15) and display the result to the user in a flex-modal or alert message.
 
 Help button displays a message, ```“This application is designed by <your name>. (C) 2018”``` in a “app-flex-modal” component (provided) or use an alert box less points.
 
-When “Display Saved Items” button is clicked, the item is read from “orders.json” file using
-Angular’s HTTP module. Then the order information should be displayed as shown in the figure
+When “Display Saved Items” button is clicked, the item from “orders.json” file should be displayed. Then the order information should be displayed as shown in the figure
 below. Then, the user enters his/her name and any quantity to order for each item (Note: the format of name input ->; Lastname, Firstname; ex: Phan, Lucas). (comma with space between last name and first name) 
 
 When “Clear” button is clicked, the Order form should be cleared (value set to null). 
@@ -73,14 +72,12 @@ When “Submit” button is clicked, calculate the subtotal, tax amount and tota
 
 1. Name input field not specified.
 2. Name not containing a “, ”.
-3. Input values within table null values.
-4. Subtotal, tax amount and invoice total calculation
 
 Show the corresponding error message using the “app-flex-modal”. Alert message could be use for reduce points.
 
 ### Add Additional Items
 
-The three buttons -> “Add Hot Dog, Add Hamberger and Add Pizza", when click adds the corresponding item to the orders list with all fields (pid, description, price and quantity) matching to the corresponding item. Quantity however will be 1.
+The three buttons -> “Add Android, Add IPhone and Add Windows Phone", when click adds the corresponding item to the orders list with all fields (pid, description, price and quantity) matching to the corresponding item. Quantity however will be 1.
 
 
 
@@ -100,8 +97,6 @@ When the delete button is pressed, delete the corresponding item from the list.
 
 
 
-
-
 ### Help Modal (show on Help button pressed)
 ![alt text](./img/4.png)
 
@@ -111,10 +106,8 @@ When the delete button is pressed, delete the corresponding item from the list.
 
 ![alt text](./img/6.png)
 
+### Success Message Modal (After Submit button is clicked and all validation has pass)
 ![alt text](./img/7.png)
-
-![alt text](./img/8.png)
-
 
 ## Points Breakdown
 
@@ -124,13 +117,12 @@ When the delete button is pressed, delete the corresponding item from the list.
 4. perform input validation (use alert - 1pts reduced)
   ```
   (use alert - 1pts reduced for each of the four validation)
-1. Name input field not specified. 2.5pts
-2. Name not containing a “, ”. 2.5pts
-3. Input values within table null values. 2.5pts
-4. Subtotal, tax amount and invoice total calculation error 2.5pts
+1. Name input field not specified. 5pts
+2. Name not containing a “, ”. 5pts
+
   ```
 5. Clear the orders form 2.5pts
-6. Add items 'Hot Dog', 'Hamberger' and 'Pizza' to list when corresponding button is clicked 7.5pts
+6. Add items 'Android', 'IPhone' and 'Windows Phone' to list when corresponding button is clicked 7.5pts
 7. delete line item (order) when delete button is click 7.5 pts
 8. read in the orders.json file and populate the list table with the initial orders (3) 7.5pts
 9. Display calculated results on a flex-modal (see screenshot) 2.5 pts

@@ -5,7 +5,7 @@ html,
 body,
 app-root {
   height: 100vh;
-  background-color: #f1f1f1;
+  background-color: #2f2e2e;
 }
 
 .outlet {

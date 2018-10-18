@@ -18,7 +18,7 @@
 
 .action-bar {
   position: relative;
-  background-color: #863fb5;
+  background-color: #3F51B5;
 }
 
 .no-items {
@@ -67,6 +67,7 @@
   align-self: start;
 }
 .item-image {
-  width: 150px;
+  width: 75px;
+  max-height: 100px;
   background-size:cover;
 }

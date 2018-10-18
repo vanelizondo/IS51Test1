@@ -65,7 +65,7 @@ export class OrdersComponent implements OnInit {
       acc += item.quantity * item.price;
       return acc;
     }, 0);
-    const taxAmount = total * .1;
+    const taxAmount = total * .15;
     const subTotal = total - taxAmount;
     const validated = this.validate(this.name, total, taxAmount, subTotal);
     if (!validated) {
@@ -78,36 +78,35 @@ export class OrdersComponent implements OnInit {
 
   setSuccessMessage(name: string, total: number, taxAmount: number, subTotal: number) {
     let output = '';
-      // Phan, Lucas
+    // Phan, Lucas
     const commaIndex = name.indexOf(', ');
     const firstName = name.slice(commaIndex, name.length);
     const lastName = name.slice(0, commaIndex);
     output = `Thank you for your order ${firstName} ${lastName}. 
-      Your subtotal is: ${subTotal}, your tax amount is: ${taxAmount} and your grand total is: ${total}.`;
+      Your subtotal is: $${subTotal}, your tax amount is: $${taxAmount} and your grand total is: $${total}.`;
     return output;
   }
   // display the order form with orders from orders.json
   displayOrder() {
     this.orders = [{
       "pid": "1",
-      "image": "assets/sm_hotdog.jpeg",
-      "description": "Hot Dog",
-      "price": 5.00,
+      "image": "assets/sm_android.jpeg",
+      "description": "Android",
+      "price": 150.00,
       "quantity": 2
     }, {
       "pid": "2",
-      "image": "assets/sm_hamberger.jpeg",
-      "description": "Hamberger",
-      "price": 6.00,
+      "image": "assets/sm_iphone.jpeg",
+      "description": "IPhone",
+      "price": 200.00,
       "quantity": 1
     }, {
       "pid": "3",
-      "image": "assets/sm_pizza.jpeg",
-      "description": "Large Pizza",
-      "price": 12.00,
+      "image": "assets/sm_windows.jpeg",
+      "description": "Windows Phone",
+      "price": 110.00,
       "quantity": 2
     }];
-
   }
   // Clear the orders form
   clear() {
@@ -124,30 +123,30 @@ export class OrdersComponent implements OnInit {
   // Add items 'Hot Dog', 'Hamberger' and 'Pizza' to list when corresponding button is clicked
   addItem(item: string) {
     switch (item) {
-      case 'Hot Dog':
+      case 'Android':
         this.orders.unshift({
           "pid": "1",
-          "image": "assets/sm_hotdog.jpeg",
-          "description": "Hot Dog",
-          "price": 5.00,
+          "image": "assets/sm_android.jpeg",
+          "description": "Android",
+          "price": 150.00,
           "quantity": 1
         });
         break;
-      case 'Hamberger':
+      case 'IPhone':
         this.orders.unshift({
           "pid": "2",
-          "image": "assets/sm_hamberger.jpeg",
-          "description": "Hamberger",
-          "price": 6.00,
+          "image": "assets/sm_iphone.jpeg",
+          "description": "IPhone",
+          "price": 200.00,
           "quantity": 1
         });
         break;
-      case 'Pizza':
+      case 'Windows Phone':
         this.orders.unshift({
           "pid": "3",
-          "image": "assets/sm_pizza.jpeg",
-          "description": "Large Pizza",
-          "price": 12.00,
+          "image": "assets/sm_windows.jpeg",
+          "description": "Windows Phone",
+          "price": 110.00,
           "quantity": 1
         });
         break;
