@@ -1,38 +1,12 @@
 # Exam 1
 
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-
 ## Instructions
 
-### Computer Solution Problem (250 points)
+### Computer Solution Problem (50 points)
 
 1. Written component 25pts (~ 25 minutes)
 2. GITFlow component 25pts (~ 10 minutes)
-3. Code component 50pts (~ 115 minutes)
+3. Code component 50pts (~ 75 minutes)
 
 You can use any resources including  your books, notes, and memos for completing this part of
 the test; however, you cannot ask, share, or consult with anyone in the world. You cannot use
@@ -111,12 +85,11 @@ When the delete button is pressed, delete the corresponding item from the list.
 
 ## Points Breakdown
 
-1. Launch flex modal or alert (.5pts reduced) showing about text 2.5pts
+1. Launch flex modal or alert showing about text 2.5pts ```“This application is designed by <your name>. (C) 2018”```
 2. convert name from <Last Name>, <First Name> to <First Name> <Last Name> and display text 2.5 pts
 3. Calculate sub total, tax amount and total 7.5pts
-4. perform input validation (use alert - 1pts reduced)
+4. perform input validation
   ```
-  (use alert - 1pts reduced for each of the four validation)
 1. Name input field not specified. 5pts
 2. Name not containing a “, ”. 5pts
 
