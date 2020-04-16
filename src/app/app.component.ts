@@ -8,13 +8,17 @@ import { FlexModalService } from './shared-components/flex-modal/flex-modal.serv
 })
 export class AppComponent implements OnInit {
   title = 'final';
-  aboutText: string;
+  aboutText = '“This application is designed by Vanessa Elizondo. (C) 2018”';
   constructor(private flexModal: FlexModalService) {
 
   }
 
   ngOnInit() {
-  }
 
+  }
+    showHelpText() {
+      this.flexModal.openDialog('about-modal');
+
+    }
 
 }
